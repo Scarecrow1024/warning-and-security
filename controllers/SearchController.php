@@ -144,7 +144,7 @@ class SearchController extends BaseController
             return $this->render('shodan',['res'=>$res,'q'=>$q]);
         }else{
             $ch = curl_init();
-            curl_setopt($ch,CURLOPT_URL, "https://www.shodan.io/search?query=lonlife");
+            curl_setopt($ch,CURLOPT_URL, "https://www.shodan.io/search?query=zyf");
             curl_setopt($ch,CURLOPT_HEADER, 0);
             curl_setopt($ch,CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
             curl_setopt($ch,CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36");
