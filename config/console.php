@@ -18,7 +18,7 @@ $config = [
                'class' => 'Swift_SmtpTransport',  
                'host' => 'smtp.126.com',  //每种邮箱的host配置不一样
                'username' => 'zyf819681825@126.com',  
-               'password' => 'zyf941024',  
+               'password' => '*******',  
                'port' => '25',  
                'encryption' => 'tls',
             ],   
