@@ -138,7 +138,7 @@ class GroupController extends BaseController
 
     public function actionDemo(){
         //第一层遍历，去重
-        $data = $this->getLink('http://www.lonlife.cn');
+        $data = $this->getLink('http://www.baidu.con');
         //print_r($data);die;
         $data1 = array_unique($data);
         $data2 = [];

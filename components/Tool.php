@@ -10,7 +10,6 @@ use Yii;
  *
  * @package app\components
  *
- * @author Kingfree <kingfree@lonlife.cn>
  * @date 2015-12-14
  */
 class Tool

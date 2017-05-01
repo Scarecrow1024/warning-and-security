@@ -87,7 +87,7 @@ use yii\bootstrap\ActiveForm;
                 <a class="btn btn-info col-md-offset-4 google">已经扫描．返回登录页面</a>
 
 
-                <div id="googleurl" hidden>otpauth://totp/sec@lonlife?secret=<?php echo $secret; ?></div>
+                <div id="googleurl" hidden>otpauth://totp/sec@zyf?secret=<?php echo $secret; ?></div>
 
                 <div id = 'user_name' style="display: none"><?="demo"?></div>
 
