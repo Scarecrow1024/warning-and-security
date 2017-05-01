@@ -59,8 +59,8 @@ class SearchController extends BaseController
         } else {
             $cookies = $this->login_github();
             $ch = curl_init();
-            curl_setopt($ch,CURLOPT_URL, "https://github.com/search?o=desc&q=lonlife&s=indexed&type=Code&utf8=%E2%9C%93");
-            curl_setopt($ch,CURLOPT_REFERER, "https://github.com/search?q=lonlife&type=Code&utf8=%E2%9C%93");
+            curl_setopt($ch,CURLOPT_URL, "https://github.com/search?o=desc&q=zyf&s=indexed&type=Code&utf8=%E2%9C%93");
+            curl_setopt($ch,CURLOPT_REFERER, "https://github.com/search?q=zyf&type=Code&utf8=%E2%9C%93");
             curl_setopt($ch,CURLOPT_COOKIE,"$cookies[0];$cookies[1];$cookies[2];$cookies[3];$cookies[4]");
             curl_setopt($ch,CURLOPT_HEADER, 0);
             curl_setopt($ch,CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
