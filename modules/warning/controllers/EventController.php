@@ -86,9 +86,8 @@ class EventController extends BaseController
             $id=Yii::$app->request->get('id');
             $model = Event::findOne($id);
             if($model->delete()){
-                $error['error']="异常删除成功";
-                $error['backurl']="/event/index";
-                return $this->redirect(['error/error', 'error' => $error]);
+                $this->_setSuccessFlash('异常删除成功');
+                return $this->redirect('/warning/event/index');
             }
         }
     }

@@ -55,9 +55,8 @@ class UserController extends BaseController
             $user->phone=Yii::$app->request->post('User')['phone'];
             $user->email=Yii::$app->request->post('User')['email'];
             if($user->insert()){
-                $error['error']="用户添加成功";
-                $error['backurl']="/user/index";
-                return $this->redirect(['error/error', 'error' => $error]);
+                $this->_setSuccessFlash('用户添加成功');
+                return $this->redirect('/warning/user/index');
             }else{
                 print_r($user->getErrors());
             }
